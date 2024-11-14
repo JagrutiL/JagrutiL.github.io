@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../static/css/bootstrap.css" rel="stylesheet" />
+  
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+    </style>
+    <style>
+        /* navbar start */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.171);
+            backdrop-filter: blur(42px);
+            /* Blur effect */
+            animation: slideDown 1s ease-out;
+            /* Animation effect */
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .nav-link {
+            margin-right: 20px;
+            /* Adjust the value as needed */
+            position: relative;
+        }
+
+        .nav-link.active::after {
+            content: '';
+            display: block;
+            width: 40%;
+            height: 2px;
+            background-color: #000;
+            /* Adjust the color as needed */
+            position: absolute;
+            /* Adjust the value to position the underline */
+            left: 30%;
+
+
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            /* Make the active link bold */
+
+        }
+
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link.show,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: #1D2538;
+        }
+
+        /* navbar end */
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img loading="lazy" src="../static/img/evoluzn_logo.png" alt="evoluzn logo" height="50" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#lookIntoSection">Product</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about_us_web.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./blogs_web.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./get_in_touch_web.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
