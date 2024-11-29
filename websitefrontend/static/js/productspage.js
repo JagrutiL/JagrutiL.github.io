@@ -17,14 +17,14 @@ function getProductData(product) {
                 '220vAC 50Hz',
                 'LoRaWAN',
                 '45mA',
-                // '40W / 60W / 80W'
+                'Temperature, Humidity, DP'
                 
             ],
             titles: [
                 'Input Supply Voltage', 
                 'Connectivity', 
                 'Input Current', 
-                // 'Power Consumption'
+                'Measuring range'
             ]
         },
         'TUBE LIGHT': {
@@ -81,13 +81,13 @@ function getProductData(product) {
                 '220VAC',
                 'Wi-Fi',
                 '45mA',
-                // '40W / 60W / 80W'
+                'User Defined Range'
             ],
             titles: [
                 'Input Supply Voltage', 
                 'Network Interface', 
                 'Input Current', 
-                // 'Power Consumption'
+                'Voltage and Power Protection'
             ]
         },
         'SMOKE DETECTOR': {
@@ -102,13 +102,13 @@ function getProductData(product) {
                 '12v DC',
                 'Wi-Fi',
                 '1A',
-                // '40W / 60W / 80W'
+                'Yes'
             ],
             titles: [
                 'Input Supply Voltage', 
                 'Connectivity', 
                 'Max Current', 
-                // 'Power Consumption'
+                'Alarm Over Desktop'
             ]
         },
         'OFFICE LIGHT': {
@@ -228,13 +228,13 @@ function getProductData(product) {
                 '12v DC',
                 'Wi-Fi',
                 '1A',
-                // '40W / 60W / 80W'
+                '97%'
             ],
             titles: [
                 'Input Supply Voltage', 
                 'Connectivity', 
                 'Input Current', 
-                // 'Power Consumption'
+                'Accuracy'
             ]
         },
 
