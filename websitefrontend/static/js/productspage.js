@@ -14,17 +14,17 @@ function getProductData(product) {
             ],
             content: [
                 'Precisely controlled temperature, regulated humidity, and monitored differential pressure ensure optimal cleanroom conditions and contamination prevention.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                '220vAC 50Hz',
+                'LoRaWAN',
+                '45mA',
+                // '40W / 60W / 80W'
                 
             ],
             titles: [
-                'Voltage Range', 
-                'Network Interface', 
-                'Current Draw', 
-                'Power Consumption'
+                'Input Supply Voltage', 
+                'Connectivity', 
+                'Input Current', 
+                // 'Power Consumption'
             ]
         },
         'TUBE LIGHT': {
@@ -37,15 +37,15 @@ function getProductData(product) {
             content: [
                 'Tube lights provide bright, even illumination for various spaces, offering energy efficiency and a sleek design suitable for both commercial and residential environments.',
                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
+                'LoRaWAN',
                 '0.2 A',
                 '48 W'
             ],
             titles: [
-                'Voltage Range', 
-                'Network Interface', 
-                'Current Draw', 
-                'Power Consumption'
+                'Input Supply Voltage', 
+                'Connectivity', 
+                'Input Current', 
+                'Power wattage'
             ]
         },
         'STREET LIGHT': {
@@ -63,10 +63,10 @@ function getProductData(product) {
                 '58 W'
             ],
             titles: [
-                'Voltage Range', 
-                'Network Interface', 
-                'Current Draw', 
-                'Power Consumption'
+                'Input Supply Voltage', 
+                'Connectivity', 
+                'Input Current', 
+                'Power wattage'
             ]
         },
         'SMART PLUG': {
@@ -78,16 +78,16 @@ function getProductData(product) {
             ],
             content: [
                 'Smart plugs enable remote control and monitoring of electrical devices, allowing automation, energy tracking, and convenient management via smartphone apps or voice commands.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                '220VAC',
+                'Wi-Fi',
+                '45mA',
+                // '40W / 60W / 80W'
             ],
             titles: [
-                'Voltage Range', 
+                'Input Supply Voltage', 
                 'Network Interface', 
-                'Current Draw', 
-                'Power Consumption'
+                'Input Current', 
+                // 'Power Consumption'
             ]
         },
         'SMOKE DETECTOR': {
@@ -99,16 +99,16 @@ function getProductData(product) {
             ],
             content: [
                 'Smart smoke detectors provide advanced fire detection with real-time alerts, connectivity to other smart devices, and enhanced accuracy to ensure timely responses and safety',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                '12v DC',
+                'Wi-Fi',
+                '1A',
+                // '40W / 60W / 80W'
             ],
             titles: [
-                'Voltage Range', 
-                'Network Interface', 
-                'Current Draw', 
-                'Power Consumption'
+                'Input Supply Voltage', 
+                'Connectivity', 
+                'Max Current', 
+                // 'Power Consumption'
             ]
         },
         'OFFICE LIGHT': {
@@ -147,10 +147,10 @@ function getProductData(product) {
                 '58 W'
             ],
             titles: [
-                'Voltage Range', 
-                'Network Interface', 
-                'Current Draw', 
-                'Power Consumption'
+                'Input Supply Voltage', 
+                'Connectivity', 
+                'Input Current', 
+                'Power wattage'
             ]
         },
         'MULTI CONTROL PANEL': {
@@ -204,16 +204,16 @@ function getProductData(product) {
             ],
             content: [
                 'Dust particle monitors detect and measure airborne particulate levels, ensuring air quality and cleanliness in sensitive environments.',
-                '9VDC',
-                '≥1000 µg/m³',
-                '0.3–1.0 µm; 1.0–2.5 µm; 2.5–10 µm',
-                '1 µg/m³'
+                '180 Vac to 265 Vac , 50/60 Hz',
+                'Wi-Fi',
+                '16 A',
+                '4000 W'
             ],
             titles: [
-                'Voltage Range', 
-                'PM2.5 Maximum Range', 
-                'Measurement Range', 
-                'Sensor Resolution'
+                'Input Supply Voltage', 
+                'Connectivity', 
+                'Max Current', 
+                'Max Power'
             ]
         },
         'AIR FLOW': {
@@ -225,16 +225,16 @@ function getProductData(product) {
             ],
             content: [
                 'Airflow monitors track and measure air movement and velocity, ensuring proper ventilation and maintaining optimal air quality in various environments.',
-                '180 Vac to 265 Vac , 50/60 Hz',
-                'Ethernet',
-                '0.22A / 0.33A / 0.44A',
-                '40W / 60W / 80W'
+                '12v DC',
+                'Wi-Fi',
+                '1A',
+                // '40W / 60W / 80W'
             ],
             titles: [
-                'Voltage Range', 
-                'Network Interface', 
-                'Current Draw', 
-                'Power Consumption'
+                'Input Supply Voltage', 
+                'Connectivity', 
+                'Input Current', 
+                // 'Power Consumption'
             ]
         },
 
@@ -247,16 +247,16 @@ function getProductData(product) {
             ],
             content: [
                 'A smart meter with 4G LTE offers remote monitoring, optimized power usage, and real-time consumption reports for efficient energy management.',
-                '415 V (3-phase, 50/60 Hz)',
+                '415 Va , 3 Phase , 50/60 Hz',
                 '4G LTE Cellular Network',
                 '0.02A',
                 '4.8 W'
             ],
             titles: [
-                'Voltage Range', 
-                'Network Interface', 
-                'Current Draw', 
-                'Power Consumption'
+                'Input Supply Voltage', 
+                'Connectivity', 
+                'Input Current', 
+                'Power wattage'
             ]
         },
 
@@ -284,10 +284,10 @@ function getProductData(product) {
 
         'AIR CONDITIONING SYSTEM': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/air_conditioning_systems.jpg',
-                '../static/img/lookintosection/cleanroom_automation/air condition systems/1.jpg',
-                '../static/img/lookintosection/cleanroom_automation/air condition systems/2.jpg',
-                '../static/img/lookintosection/cleanroom_automation/air condition systems/3.jpg',
+                '../static/img/lookintosection/cleanroom_automation/air_conditioning_system.png',
+                '../static/img/lookintosection/cleanroom_automation/air condition systems/1.png',
+                '../static/img/lookintosection/cleanroom_automation/air condition systems/2.png',
+                '../static/img/lookintosection/cleanroom_automation/air condition systems/3.png',
             ],
             content: [
                 'Designed to maintain precise temperature, humidity, and air quality, our air conditioning systems ensure a stable and contaminant-free environment for cleanroom operations, enhancing efficiency and safety',
@@ -306,10 +306,10 @@ function getProductData(product) {
 
         'FUME CUPBOARD': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/Fume_Cupboard.jpg',
-                '../static/img/lookintosection/cleanroom_automation/fume cupboard/2.jpg',
+                '../static/img/lookintosection/cleanroom_automation/Fume_Cupboard.png',
+                '../static/img/lookintosection/cleanroom_automation/fume cupboard/2.png',
                 '../static/img/lookintosection/cleanroom_automation/fume cupboard/3.png',
-                '../static/img/lookintosection/cleanroom_automation/fume cupboard/product.full.jpg',
+                '../static/img/lookintosection/cleanroom_automation/fume cupboard/product.full.png',
             ],
             content: [
                 'Engineered for safety, our fume cupboards effectively remove hazardous fumes and vapors, providing a secure and controlled environment for cleanroom procedures.',
@@ -328,7 +328,7 @@ function getProductData(product) {
 
         'LAMINAR WORK STATION': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/Laminar_work_station.jpg',
+                '../static/img/lookintosection/cleanroom_automation/Laminar_work_station.png',
                 '../static/img/lookintosection/cleanroom_automation/laminar work station/4.png',
                 '../static/img/lookintosection/cleanroom_automation/laminar work station/2.png',
                 '../static/img/lookintosection/cleanroom_automation/laminar work station/1.png',
@@ -350,10 +350,10 @@ function getProductData(product) {
 
         'MODULAR SANDWITCH PANEL': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/modular_sandwitch_panels.jpg',
-                '../static/img/lookintosection/cleanroom_automation/sandwitch panels/1.jpg',
-                '../static/img/lookintosection/cleanroom_automation/sandwitch panels/3.jpg',
-                '../static/img/lookintosection/cleanroom_automation/sandwitch panels/1.jpg',
+                '../static/img/lookintosection/cleanroom_automation/modular_sandwitch_panels.png',
+                '../static/img/lookintosection/cleanroom_automation/sandwitch panels/1.png',
+                '../static/img/lookintosection/cleanroom_automation/sandwitch panels/3.png',
+                '../static/img/lookintosection/cleanroom_automation/sandwitch panels/clean-room-doors.png',
             ],
             content: [
                 'Durable, insulated panels offering superior thermal control and seamless integration, ideal for creating efficient and sterile cleanroom environments.',
@@ -372,7 +372,7 @@ function getProductData(product) {
 
         'NITROGEN STORAGE CABINET': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/nitrogen_storage_cabinate.jpg',
+                '../static/img/lookintosection/cleanroom_automation/nitrogen_storage_cabinate.png',
                 '../static/img/lookintosection/cleanroom_automation/nitrogen storage cabinet/1.png',
                 '../static/img/lookintosection/cleanroom_automation/nitrogen storage cabinet/2.png',
                 '../static/img/lookintosection/cleanroom_automation/nitrogen storage cabinet/3.png',
@@ -395,7 +395,7 @@ function getProductData(product) {
         
         'PASS BOX': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/Pass_box.jpg',
+                '../static/img/lookintosection/cleanroom_automation/Pass_box.png',
                 '../static/img/lookintosection/cleanroom_automation/pass box/1.png',
                 '../static/img/lookintosection/cleanroom_automation/pass box/2.png',
                 '../static/img/lookintosection/cleanroom_automation/pass box/3.png',
@@ -419,7 +419,7 @@ function getProductData(product) {
         
         'SAMPLING BOOTH': {
             images: [
-                '../static/img/lookintosection/cleanroom_automation/sampling-booth.jpg',
+                '../static/img/lookintosection/cleanroom_automation/sampling-booth.png',
                 '../static/img/lookintosection/cleanroom_automation/sampling booth/1.png',
                 '../static/img/lookintosection/cleanroom_automation/sampling booth/2.png',
                 '../static/img/lookintosection/cleanroom_automation/sampling booth/3.png',
@@ -451,16 +451,16 @@ function getProductData(product) {
             ],
             content: [
                 'Control panels provide centralized management and monitoring of various systems, offering intuitive interfaces for operating, configuring, and controlling equipment and processes.',
-                '415 Va , 3 Phase , 50/60 Hz ',
-                'Ethernet',
-                '0.02A',
-                '4.8 W'
+                '180 Vac to 265 Vac , 50/60 Hz',
+                'LoRaWAN',
+                '0.2 A',
+                '48 W'
             ],
             titles: [
-                'Voltage Range', 
-                'Network Interface', 
-                'Current Draw', 
-                'Power Consumption'
+                'Input Supply Voltage', 
+                'Connectivity', 
+                'Input Current', 
+                'Power wattage'
             ]
         }
     };

@@ -1344,6 +1344,11 @@ a:hover {
   font-size: 2.25vh;
   font-weight: 600;
 }
+@media (max-width: 737px) {
+  .landing_page_product_title {
+    font-size: 1.8vh;
+  }
+}
 
 .landing_page_product_description {
   color: #6F6F6F;
