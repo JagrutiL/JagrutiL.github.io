@@ -9140,6 +9140,7 @@ button.bg-dark:hover {
 
 .pb-3,
 .py-3 {
+    font-size: 13px;
     padding-bottom: 1rem !important
 }
 
