@@ -117,6 +117,7 @@ body {
     background-color: #F0F2F9;
     height: 100vh;
     width: 50%;
+    padding-top: 5vh;
 }
 
 .product-container {
@@ -253,6 +254,10 @@ body {
     .product-box {
         width: 100%;
         flex: 1 1 100%;
+        padding-top: 0px;
+    }
+    .product-box {
+        padding-top: 7vh;
     }
 
     .product-info .main_title {
@@ -273,7 +278,7 @@ body {
     }
 
     .btn.contact-button {
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
 
     .small-box {
@@ -530,12 +535,13 @@ body {
     right: -1px;
     width: 1px;
     height: 50px;
-    background-color: #515A69;
+    background-color: #515a693f;
     transform: rotate(-90deg);
     transform-origin: center;
     z-index: 0;
     transition: width 0.3s ease-in-out, transform 0.2s ease-in-out 0.3s, z-index 0.15s ease-in-out;
     box-sizing: border-box;
+    border-radius: 3px;
 }
 
 .btn:hover {
@@ -545,7 +551,7 @@ body {
 }
 
 .btn:hover:after {
-    z-index: -1;
+    z-index: 1;
     transform: rotate(0deg);
     width: 100%;
     transition: transform 0.2s ease-in-out, width 0.3s ease-in-out 0.2s, z-index 0.15s ease-in-out;
@@ -759,11 +765,11 @@ body {
     }
   
     .landingpage_footer_product_title {
-        font-size: 1.3em; 
+        font-size: 20px; 
     }
   
     .landingpage_footer_product_options {
-        font-size: 0.9em;
+        font-size: 14px;
     }
   
     .landingpage_footer_socialmedia_div {
@@ -805,11 +811,11 @@ body {
     }
   
     .landingpage_footer_product_title {
-        font-size: 1.2em;
+        font-size: 20px; 
     }
   
     .landingpage_footer_product_options {
-        font-size: 0.8em;
+        font-size: 14px;
     }
   
     .landingpage_footer_socialmedia_div {
@@ -832,11 +838,11 @@ body {
     }
   
     .landingpage_footer_product_title {
-        font-size: 1.2em; 
+        font-size: 20px; 
     }
   
     .landingpage_footer_product_options {
-        font-size: 0.8em;
+        font-size: 14px;
         padding: 2px 0; 
     }
   
