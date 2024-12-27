@@ -445,9 +445,9 @@ function getProductData(product) {
         'CONTROL PANEL': {
             images: [
                 '../static/img/lookintosection/control_panal/control_panal_FV.png',
-                '../static/img/lookintosection/control_panal/control_panal_lv.png',
-                '../static/img/lookintosection/control_panal/control_panal_rv.png',
-                '../static/img/lookintosection/control_panal/control_panal_bv.png',
+                '../static/img/lookintosection/control_panal/control_panal_LV.png',
+                '../static/img/lookintosection/control_panal/control_panal_RV.png',
+                '../static/img/lookintosection/control_panal/control_panal_BV.png',
             ],
             content: [
                 'Control panels provide centralized management and monitoring of various systems, offering intuitive interfaces for operating, configuring, and controlling equipment and processes.',
