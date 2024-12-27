@@ -1,5 +1,5 @@
 const videoSources = [
-    "../static/img/0000-0979 (1).mp4",
+    "../static/img/WhatsApp Video 2024-12-27 at 10.44.48 AM.mp4",
     "../static/img/0000-0375 (1).mp4",
     "../static/img/cleanroom (1).mp4"
   ];
