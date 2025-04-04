@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Apply Lato font to the body */
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.8;
+} 
+ 
+  h2 {
+    margin-top: 2rem;
+  }
+  .blog-section {
+    margin-bottom: 3rem;
+  }
+  .blog_main{
+    background-color: #3386FF;
+  }
+
+   
+
+
+
