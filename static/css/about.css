@@ -1,0 +1,387 @@
+  body {
+       font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+                sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+  }
+
+ 
+
+  .section-title {
+      color: #2B4DBF;
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+  }
+
+  .card-custom {
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #e4e6eb;
+      background: #f8fbff;
+  }
+
+  .accordion-button {
+      font-weight: 700;
+      color: #2B4DBF !important;
+  }
+
+  .nav-link {
+      font-weight: 600;
+  }
+
+  header {
+      border-bottom: 1px solid #eee;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .p1 {
+      padding: 4px !important;
+      text-align: justify;
+  }
+
+  .p2 {
+      padding-top: 15px !important;
+      text-align: justify;
+      padding-left: 4px;
+      padding-right: 4px;
+  }
+
+  .b {
+
+      color: #2B4DBF;
+      font-weight: 600;
+  }
+
+  .accordion {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .core-values-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 26px;
+      padding: 12px;
+  }
+
+  .core-value-box {
+      border: 1px solid #d9e6ff;
+      border-radius: 12px;
+      padding-left: 22px;
+      padding-right: 22px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: #fff;
+      display: flex;
+      gap: 10px;
+      transition: .3s ease;
+  }
+
+  .core-value-box:hover {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      transform: translateY(-4px);
+  }
+
+  .cv-icon {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 10px;
+  }
+
+  .core-value-box h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2e2e2e;
+      margin-bottom: 6px;
+  }
+
+  .core-value-box p {
+      font-size: 14px;
+      line-height: 1.45;
+      margin: 0;
+      font-weight: 500;
+      color: #555;
+  }
+
+  .accordion-collapse {
+      transition: height 0.45s ease;
+  }
+
+
+
+
+
+  /* Leader Detail Section - Horizontal Layout */
+
+  /* ==================== CEO SECTION ==================== */
+
+  .ceo-section 
+  .ceo-section 
+  .ceo-section .leader-bio {
+      text-align: left;
+  }
+
+  .leader-name,.leader-title-main {
+    text-align: center;
+  }
+
+  .ceo-section .leader-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #2454a6;
+      margin-bottom: 8px;
+  }
+
+  .ceo-section .leader-title-main {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 6px;
+  }
+
+  .ceo-section .leader-title-role {
+      font-style: italic;
+      font-size: 1rem;
+      color: #555;
+  }
+
+  .ceo-section .leader-bio {
+      margin-top: 10px;
+      font-size: 0.98rem;
+      line-height: 1.55;
+      color: #333;
+      max-width: 650px;
+  }
+
+  .leader-profile-img {
+      width: 220px;
+      height: 220px;
+      border-radius: 10px;
+      background: url('../img/surya_jonnalgadda.png') center/cover;
+      border: 1.5px solid #ececec;
+      box-shadow: 0 4px 22px rgba(36, 84, 166, 0.12);
+      transition: transform 0.3s;
+  }
+
+  .leader-profile-img:hover {
+      transform: scale(1.035) rotate(-1deg);
+  }
+
+  /* ==================== GRID CARDS ==================== */
+
+  .leader-card {
+      border: 2px solid #2454a6;
+      border-radius: 14px;
+      padding: 1.5rem;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(36, 84, 166, 0.1);
+      transition: 0.3s;
+      height: 100%;
+  }
+
+  .leader-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background-size: cover !important;
+      background-position: center !important;
+      margin: 0 auto 1.2rem;
+      transition: 0.3s;
+      
+  }
+
+  .leader-card:hover .leader-img {
+      transform: scale(1.09) rotate(-2deg);
+  }
+
+  /* ==================== SMALL COMPACT CARDS ==================== */
+
+ .small-leader-card {
+    display: flex;
+    flex-direction: column;       /* Image on top, text below */
+    align-items: center;
+    /* gap: 0.8rem; */
+    padding: 2px;
+    border: 1.5px solid #2454a6;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(36, 84, 166, 0.12);
+    transition: 0.3s;
+    height: 100%;
+    text-align: center;           /* Center text */
+}
+
+
+
+
+
+  .small-leader-card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 8px 20px rgba(36, 84, 166, 0.18);
+  }
+
+  .small-leader-card .leader-img {
+      width: 85px;
+      height: 85px;
+  }
+
+  /* Typography */
+  .leader-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #2454a6;
+  }
+
+  .leader-title {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+      .leader-profile-img {
+          margin-bottom: 16px;
+      }
+  }
+
+
+
+  /* What Sets Us Apart*/
+
+
+  /* Custom Styles for the "What Sets Us Apart" Timeline Effect */
+  .apart-list {
+      list-style-type: none;
+      /* Remove default bullet points */
+      padding-left: 10px;
+      /* Space for the vertical line */
+      position: relative;
+      border-left: 2px solid #2454a6;
+      /* The main vertical line */
+  }
+
+  .apart-list>li {
+      padding: 10px 0 15px 30px;
+      /* Space for content and dot positioning */
+      position: relative;
+      margin-bottom: 0;
+  }
+
+  .apart-list>li:before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      /* Center the dot on the blue line */
+      top: 15px;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      /* White background to allow border color */
+      border: 4px solid #f99d1e;
+      /* Orange border for the dot */
+      border-radius: 50%;
+      z-index: 10;
+  }
+
+  .apart-list>li:last-child {
+      padding-bottom: 0;
+      /* Remove padding from the last item */
+  }
+
+  /* Style for the title of each point */
+  .apart-title {
+      font-weight: 700;
+      color: #2454a6;
+      /* Set the title color to the blue accent */
+      display: block;
+      margin-bottom: 5px;
+      font-size: 1.1em;
+  }
+
+  /* Style for the body text */
+  .apart-description {
+      font-size: 0.95em;
+      line-height: 1.4;
+      color: #333;
+  }
+
+
+  /* commitment to customers and employees */
+
+  /* Custom Styles for Commitment Cards */
+  .commitment-card {
+      border: 1px solid #d9e6ff;
+      border-radius: 14px;
+      padding: 1.2rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(36, 84, 166, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+      cursor: pointer;
+  }
+
+  .commitment-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 20px rgba(36, 84, 166, 0.15);
+      border: 1px solid #859dc5;
+      /* Stronger blue border */
+  }
+
+
+  .commitment-icon-wrapper {
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      border: 2px solid #2454a6;
+      /* Outer blue circle */
+      background-color: #f7f9fe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+  }
+
+  .commitment-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 3px solid #f99d1e;
+      /* Inner orange circle/border */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  .commitment-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #2454a6;
+      margin-bottom: 0.5rem;
+  }
+
+  .commitment-description {
+      font-size: 0.9rem;
+      line-height: 1.35;
+      color: #333;
+  }
+
+
+
+  /* Section Header Styles */
+  .commitment-section-header {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #222;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: left;
+  }

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Intelligent Lighting Management Solution (ILMS)</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+            font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+                sans-serif;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .solution_digitization_heading1 {
+            color: #2a2a2a;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .solution_digitization_heading2 {
+            color: #2b4dbf;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .how {
+            color: #2b4dbf;
+            text-align: left;
+            font-weight: 900;
+        }
+    </style>
+
+    <style>
+        /* Default image width */
+        .solution-img {
+            width: 50%;
+        }
+
+        /* On lg screens and below, make image full width */
+        @media (max-width: 992px) {
+            .solution-img {
+                width: 100%;
+            }
+        }
+    </style>
+    <style>
+        .blue-shape {
+            width: 60px;
+            /* Width of the shape */
+            height: 150px;
+            /* Height of the shape */
+            background-color: #2746d3;
+            /* Blue color from your image */
+            border-bottom-right-radius: 50px;
+            /* Rounded bottom-right corner */
+        }
+    </style>
+    <style>
+        .machinedata1 {
+            display: none;
+        }
+
+        .machinedata2 {
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <a href="../templates/index.html"><img class="logo" src="../static/img/evzlooogo.png" height="45" loading="lazy" /></a>
+        <div id="navbar-placeholder"></div>
+    </header>
+    <div class="px-2 mb-5">
+        <!-- <h1 class="solution_digitization_heading1 mt-5 text-justify text-uppercase">
+            Intelligent Lighting Management Solution (ILMS)
+        </h1> -->
+        <h3 class="solution_digitization_heading2 mt-3 text-justify text-uppercase">
+            Transforming Lighting into Smart, Connected Assets for Industrial Excellence
+        </h3>
+
+        <p class="container mt-4" style="text-align: justify">
+            Transform your facility’s lighting into smart, connected assets that enhance industrial excellence while
+            delivering substantial energy savings. Evoluzn’s ILMS retrofits your existing fixtures with cutting-edge
+            controllers integrated with real-time sensors for occupancy, daylight, lux, fixture temperature, and power
+            consumption. This intelligent system dynamically optimizes illumination and operational efficiency without
+            compromising safety or lighting quality.
+        </p>
+
+        <div class="container">
+            <div class="row mt-5" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+          ">
+                <div class="col-lg">
+                    <h4 style="color: #2b4dbf; font-weight: 800" class="text-decoration-underline text-uppercase">
+                        WHAT WE
+                        DELIVER
+                    </h4>
+                    <div class="mt-3" style="
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 15px;
+                font-weight: 700;
+              ">
+                        <img style="width: 50px"
+                            src="../static/img/Intelligent_lightning_management/ilms icon/Group 1000004801.png" />
+                        <div style="text-align: justify">
+                            Precision Sensing for Maximum Energy Efficiency: <br>ML-driven sensors detect occupancy
+                            patterns, ambient daylight, and luminance levels to adjust lighting automatically, achieving
+                            energy reductions of up to 75% and significantly lowering utility bills.
+                        </div>
+                    </div>
+                    <div class="mt-3" style="
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 15px;
+                font-weight: 700;
+              ">
+                        <img style="width: 50px"
+                            src="../static/img/Intelligent_lightning_management/ilms icon/Group 1000004802.png"  loading="lazy"/>
+                        <div style="text-align: justify">
+                            Predictive Maintenance for Increased Reliability: <br>Continuous monitoring of fixture
+                            temperature and power consumption anticipates faults before failure, extending fixture
+                            lifespan and minimizing costly production downtime.
+                        </div>
+                    </div>
+                    <div class="mt-3" style="
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 15px;
+                font-weight: 700;
+              ">
+                        <img style="width: 50px"
+                            src="../static/img/Intelligent_lightning_management/ilms icon/Group 1000004803.png" loading="lazy" />
+                        <div style="text-align: justify">
+                            Modular, Scalable Design: <br> Flexible controllers manage up to 10 lights per unit with
+                            adaptive zoning and task-specific brightness control, ideal for retrofits or new
+                            installations. Centralized edge computing coordinates multiple zones for seamless
+                            facility-wide management.
+                        </div>
+                    </div>
+                    <div class="mt-3" style="
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 15px;
+                font-weight: 700;
+              ">
+                        <img style="width: 50px"
+                            src="../static/img/Intelligent_lightning_management/ilms icon/Group 1000004804.png" loading="lazy" />
+                        <div style="text-align: justify">
+                            Centralized Dashboard with Real-Time Control: <br> Facility managers access scheduling,
+                            health monitoring, fault alerts, and analytics from a unified interface, enabling proactive
+                            energy management and operational oversight.
+                        </div>
+                    </div>
+                    <div class="mt-3" style="
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 15px;
+                font-weight: 700;
+              ">
+                        <img style="width: 50px"
+                            src="../static/img/Intelligent_lightning_management/ilms icon/Group 1000004805.png" loading="lazy" />
+                        <div style="text-align: justify">
+                            Sustainability & Compliance: <br> ILMS supports your facility’s LEED, IGBC, and other green
+                            building certifications, underlining your commitment to sustainable operations.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg">
+                    <img class="w-100" src="../static/img/Intelligent_lightning_management/lightmanagment.png" loading="lazy" />
+                </div>
+            </div>
+
+            <div class="row mt-5" style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+          ">
+                <div class="col-lg">
+                    <h4 style="color: #2b4dbf; font-weight: 800 text-uppercase">
+                        Transform Your Facility with Intelligent Lighting
+                    </h4>
+                    <p style="text-align: justify">
+                        Unlock up to 75% energy savings while boosting productivity, safety, and operational excellence
+                        in your facility with Evoluzn’s advanced IIoT-enabled Intelligent Lighting. Modernize your
+                        lighting ecosystem for measurable results, streamlined maintenance, and proven sustainability.
+                        Contact us today for a tailored consultation and see how smart lighting can transform your
+                        operations.
+                    </p>
+
+                    <!-- <div style="color: #2B4DBF;text-align: justify;">
+                        Contact us now for a personalized consultation and start maximizing the value of your machinery.
+                    </div> -->
+                </div>
+                <div class="col-lg">
+                    <div class="machinedata2 mt-4" data-target="yy" style="
+                background-color: #2b4dbf;
+                padding: 20px;
+                color: white;
+                text-align: center;
+                font-weight: 800;
+                font-size: large;
+                cursor: pointer;
+                text-transform: uppercase;
+              ">
+                        Key Features
+                    </div>
+                    <div class="mt-2 machinedata2 mt-4" data-target="zz" style="
+                background-color: #2b4dbf;
+                padding: 20px;
+                color: white;
+                text-align: center;
+                font-weight: 800;
+                font-size: large;
+                cursor: pointer;
+                text-transform: uppercase;
+              ">
+                        Industry Specific Advantages
+                    </div>
+                </div>
+            </div>
+            <!-- ***************1****************** -->
+
+            <!-- ***************1****************** -->
+
+            <div id="yy" class=" mt-5 machinedata1" data-target="yy">
+                <h4 style="color: #2B4DBF; font-weight: 800;text-transform: uppercase;"
+                    class=" text-decoration-underline ">Key Features
+                </h4>
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center"> <!-- Left Column -->
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center"> <img class="solution-img"
+                            src="../static/img/Intelligent_lightning_management/Key_features/1.png"
+                            alt="Solution Image" loading="lazy"> </div>
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #EBF5FF; border-radius: 10px;">
+                        <h5 style="color: #2B4DBF; font-weight: 800;text-transform: uppercase;">Precision Sensing for
+                            Maximum Efficiency
+                        </h5>
+                        <div style="text-align: justify;">Sensors detect occupancy, daylight, and luminance (lux)
+                            levels, enabling illumination adjustment that reduces energy consumption by up to 75%,
+                            generating significant utility bill savings.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center"> <!-- Left Column -->
+
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #EBF5FF; border-radius: 10px;">
+                        <h5 style="color: #2B4DBF; font-weight: 800;text-transform: uppercase;">Predictive Maintenance
+                            for Reliability</h5>
+                        <div style="text-align: justify;">Continuous monitoring of lighting fixture temperature and
+                            power use predicts faults before failure, extending fixture life and minimizing costly
+                            downtime.
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center"> <img class="solution-img"
+                            src="../static/img//Intelligent_lightning_management/Key_features/2.png"
+                            alt="Solution Image" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center"> <!-- Left Column -->
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center"> <img class="solution-img"
+                            src="../static/img/Intelligent_lightning_management/Key_features/3.png"
+                            alt="Solution Image" loading="lazy">
+                    </div>
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #EBF5FF; border-radius: 10px;">
+                        <h5 style="color: #2B4DBF; font-weight: 800;text-transform: uppercase;">Modular, Flexible Design
+                        </h5>
+                        <div style="text-align: justify;">Designed for easy retrofit or new installations, each
+                            Intelligent Lighting Controller manages up to 10 lights with adaptive zoning and
+                            task-specific brightness, ensuring ideal illumination tailored for workflows.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center"> <!-- Left Column -->
+
+                    <div class="col-lg-7 p-4" style="background-color: #EBF5FF; border-radius: 10px;">
+                        <h5 style="color: #2B4DBF; font-weight: 800;text-transform: uppercase;">Centralized Dashboard &
+                            Real-Time Control
+                        </h5>
+                        <div style="text-align: justify;">Our Edge Computer orchestrates ILMS units, supporting up to
+                            100 lights or multiple zones with scheduling, real-time alerts, and analytics, giving
+                            facility managers seamless, energy-smart control.
+                        </div>
+                    </div>
+                    <!-- Right Column -->
+
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center"> <img class="solution-img"
+                            src="../static/img/Intelligent_lightning_management/Key_features/4.png"
+                            alt="Solution Image" loading="lazy">
+                    </div>
+
+                </div>
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center"> <!-- Left Column -->
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center"> <img class="solution-img"
+                            src="../static/img/Intelligent_lightning_management/Key_features/5.png"
+                            alt="Solution Image" loading="lazy">
+                    </div>
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #EBF5FF; border-radius: 10px;">
+                        <h5 style="color: #2B4DBF; font-weight: 800;text-transform: uppercase;">Compliance &
+                            Sustainability</h5>
+                        <div style="text-align: justify;">Our solutions help facilities meet LEED, IGBC, and other green
+                            building certification standards, showcasing your commitment to sustainability.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center"> <!-- Left Column -->
+
+                    <div class="col-lg-7 p-4" style="background-color: #EBF5FF; border-radius: 10px;">
+                        <h5 style="color: #2B4DBF; font-weight: 800;text-transform: uppercase;">Industry-Tailored
+                            Lighting
+                        </h5>
+                        <div style="text-align: justify;">Custom integrations support environments from precision
+                            cleanrooms to rugged manufacturing floors and expansive high bays – all optimized for safety
+                            and performance.
+                        </div>
+                    </div>
+                    <!-- Right Column -->
+
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center"> <img class="solution-img"
+                            src="../static/img/Intelligent_lightning_management/Key_features/6.png"
+                            alt="Solution Image" loading="lazy">
+                    </div>
+
+                </div>
+                <h3 class="how mt-3 text-justify text-uppercase">
+                    How ILMS Works for Your Facility
+                </h3>
+
+                <p class="container mt-4" style="text-align: justify">
+                    Retrofitting with Evoluzn’s ILMS reduces 50% of capital costs compared to purchasing fully automated
+                    lights upfront and also preserves existing wiring and reduces costs by up to 40%. Lighting zones
+                    adapt dynamically with ML-powered occupancy sensors setting schedules and lux thresholds, including
+                    randomized “presence” functions ideal for security in warehouses and stockrooms.
+
+                    Edge computing delivers rapid health monitoring and predictive insights in real time, reducing
+                    manual maintenance and ensuring uninterrupted, optimally lit operations.
+
+                </p>
+
+            </div>
+            <!-- ****************1***************** -->
+
+            <div id="zz" class="mt-5 mb-5 machinedata1" data-target="zz">
+                <h4 style="color: #2b4dbf; font-weight: 800;text-transform: uppercase;"
+                    class="text-decoration-underline">
+                    Industry Specific Advantages
+                </h4>
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center">
+                    <!-- Left Column -->
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                        <img class="solution-img"
+                            src="../static/img/Intelligent_lightning_management/Industry_specific_advantages/image_1.png"
+                            alt="Solution Image" loading="lazy" />
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #ebf5ff; border-radius: 10px">
+                        <h5 style="color: #2b4dbf; font-weight: 800; text-transform: uppercase;">
+                            Pharmaceuticals
+                        </h5>
+
+                        <div style="text-align: justify;">
+                            <ul style="padding-left: 18px; margin: 0;">
+                                <li>Precisely control cleanroom lighting to reduce contamination risks and maintain
+                                    sterile processing environments.
+                                </li>
+                                <li>Adaptive lighting supports regulated workflows by providing consistent illumination
+                                    that meets stringent hygiene and regulatory standards (FDA CGMP, ISO 14644).
+                                </li>
+                                <li>Automated dimming, scheduling, and occupancy-based control reduce human
+                                    intervention, minimizing contamination potential.</li>
+                                <li>Energy-efficient LED solutions lower operational costs while maintaining optimal
+                                    temperature and lighting conditions critical for sensitive pharmaceutical
+                                    manufacturing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center">
+                    <!-- Left Column -->
+
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #ebf5ff; border-radius: 10px">
+                        <h5 style="color: #2b4dbf; font-weight: 800; text-transform: uppercase;">
+                            Electronics
+                        </h5>
+
+                        <div style="text-align: justify;">
+                            <ul style="padding-left: 18px; margin: 0;">
+                                <li>Improve assembly line yield with flicker-free, glare-minimized task lighting
+                                    customized for delicate electronics and semiconductor work.</li>
+                                <li>Automated lighting controls enhance operator comfort by reducing eye strain and
+                                    fatigue during detailed, repetitive tasks</li>
+                                <li>Zonal control ensures efficient lighting tailored to workstation specific needs,
+                                    conserving energy without compromising visibility.</li>
+                                <li>Continuous performance monitoring and remote diagnostics increase lighting system
+                                    reliability and reduce unplanned maintenance.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                        <img class="solution-img"
+                            src="../static/img/Garmet Stitching Industry Solutions/Key Features/Quality Kit - Elevate Product Standards and Reduce Waste.png"
+                            alt="Solution Image" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center">
+                    <!-- Left Column -->
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                        <img class="solution-img"
+                            src="../static/img/Garmet Stitching Industry Solutions/Key Features/Maintenance Kit - Reduce Downtime, Protect Assets.png"
+                            alt="Solution Image" loading="lazy" />
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #ebf5ff; border-radius: 10px">
+                        <h5 style="color: #2b4dbf; font-weight: 800; text-transform: uppercase;">
+                            Automotive
+                        </h5>
+
+                        <div style="text-align: justify;">
+                            <ul style="padding-left: 18px; margin: 0;">
+                                <li>Optimize factory floor safety and productivity with adaptive brightness control
+                                    responding to real-time occupancy and ambient light.
+                                </li>
+                                <li>Immediate fault detection and predictive maintenance prevent lighting failures,
+                                    reducing disruptions during complex assembly operations.
+                                </li>
+                                <li>Dynamic lighting zones support variable shift patterns and intricate workflows in
+                                    sensor, electronics, and battery component production.</li>
+                                <li>Integrated IIoT linkages facilitate energy management aligned with smart factory
+                                    initiatives and sustainability goals.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center">
+                    <!-- Left Column -->
+
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #ebf5ff; border-radius: 10px">
+                        <h5 style="color: #2b4dbf; font-weight: 800; text-transform: uppercase;">
+                            Battery Manufacturing
+                        </h5>
+
+                        <div style="text-align: justify;">
+                            <ul style="padding-left: 18px; margin: 0;">
+                                <li>Enhance hazardous area lighting with robust sensor fusion enabling precise
+                                    illumination control while adhering to safety and explosion-proof standards.</li>
+                                <li>Energy-efficient control reduces power consumption in energy-intensive battery
+                                    production environments.</li>
+                                <li>Real-time health monitoring and predictive fault alerts ensure continuous, reliable
+                                    lighting in critical manufacturing zones.</li>
+                                <li>Adaptive lighting contributes to worker safety by improving visibility in risk-prone
+                                    areas and critical process stations.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                        <img class="solution-img"
+                            src="../static/img/Garmet Stitching Industry Solutions/Key Features/Battery_Manufacturing_LMS.png"
+                            alt="Solution Image" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center">
+                    <!-- Left Column -->
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                        <img class="solution-img"
+                            src="../static/img/Garmet Stitching Industry Solutions/Key Features/garment_mfd_LMS.png"
+                            alt="Solution Image" loading="lazy" />
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #ebf5ff; border-radius: 10px">
+                        <h5 style="color: #2b4dbf; font-weight: 800; text-transform: uppercase;">
+                            Garment Manufacturing
+                        </h5>
+
+                        <div style="text-align: justify;">
+                            <ul style="padding-left: 18px; margin: 0;">
+                                <li>Improve stitching floor visibility with task-specific, flicker-free lighting
+                                    enhancing operator productivity and accuracy.
+                                </li>
+                                <li>Occupancy and daylight sensors dynamically manage energy usage across work tables,
+                                    warehouses, and stock rooms, achieving over 40% power savings.
+                                </li>
+                                <li>Visual feedback and real-time remote monitoring simplify maintenance, reducing
+                                    downtime and operational disruptions.</li>
+                                <li>Scalable, networked lighting controls seamlessly integrate with broader factory
+                                    automation and energy management systems.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center">
+                    <!-- Left Column -->
+
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #ebf5ff; border-radius: 10px">
+                        <h5 style="color: #2b4dbf; font-weight: 800; text-transform: uppercase;">
+                            Warehousing & Logistics
+                        </h5>
+
+                        <div style="text-align: justify;">
+                            <ul style="padding-left: 18px; margin: 0;">
+                                <li>Smart occupancy sensors optimize lighting based on activity zones and time,
+                                    drastically cutting energy wastage in expansive storage areas.</li>
+                                <li>Automated scheduling supports variable logistics operations, including night shifts
+                                    and seasonal fluctuations.</li>
+                                <li>Increased worker safety with well-lit paths and loading docks reducing accident
+                                    risks.</li>
+                                <li>Central analytics provide actionable insights into energy consumption and system
+                                    health for improved facility management.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                        <img class="solution-img"
+                            src="../static/img/Garmet Stitching Industry Solutions/Key Features/Warehousing & Logistics_LMS.png"
+                            alt="Solution Image" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="row mt-5 p-2 d-flex justify-content-center align-items-center">
+                    <!-- Left Column -->
+                    <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                        <img class="solution-img"
+                            src="../static/img/Garmet Stitching Industry Solutions/Key Features/food_beverage_LMS.png"
+                            alt="Solution Image" loading="lazy" />
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-lg-7 p-4" style="background-color: #ebf5ff; border-radius: 10px">
+                        <h5 style="color: #2b4dbf; font-weight: 800; text-transform: uppercase;">
+                            FOOD & BEVERAGE PROCESSING
+                        </h5>
+
+                        <div style="text-align: justify;">
+                            <ul style="padding-left: 18px; margin: 0;">
+                                <li>Sustains hygienic processing environments with lighting that supports cleanliness
+                                    protocols and minimizes microbial risks.
+                                </li>
+                                <li>Customizable illumination tailored to different production stages ensuring optimal
+                                    operator performance and product visibility.
+                                </li>
+                                <li>Energy-efficient controls contribute to lower operational costs and environmental impact.</li>
+                                <li>Supports strict regulatory requirements with consistent lighting that aids in inspection and quality assurance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- **********2*********** -->
+    </div>
+    </div>
+    <script src="../static/js/navbar.js"></script>
+      <script>
+document.body.addEventListener('click', e => {
+    if (e.target.classList.contains('machinedata2')) {
+
+        const target = document.getElementById(e.target.dataset.target);
+
+        // Show/hide logic
+        document.querySelectorAll('.machinedata1').forEach(c => {
+            if (c !== target) {
+                c.style.display = 'none';
+            }
+        });
+
+        // Toggle target block
+        target.style.display = (target.style.display === 'block') ? 'none' : 'block';
+
+        // SCROLL into view when opened
+        if (target.style.display === 'block') {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+});
+</script>
+</body>
+
+</html>

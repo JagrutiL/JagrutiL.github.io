@@ -1,0 +1,154 @@
+body {
+     font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial,
+                sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+.section-title {
+    color: #2B4DBF;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.para {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    font-weight: 600;
+}
+p{
+    text-align: justify;
+    padding:2px 3px 2px 3px;
+}
+
+.sm {
+    font-weight: 700 !important;
+
+    font-size: 27px !important;
+}
+
+.blue-left-bar {
+    border-left: 20px solid #1f4db3;
+
+    padding-left: 20px;
+}
+
+.underline-title {
+    border-bottom: 3px solid #1f4db3;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.spec-box {
+    background: #fafcff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spec-box img {
+    height: 20px;
+    margin-right: 8px;
+}
+
+.icon-circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    /* border: 2px solid #1f4db3; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.list {
+    display: flex;
+}
+
+.list img {
+    position: relative;
+    top: 8px;
+}
+
+
+.icon-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    /* border: 3px solid #2B4DBF; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-row p {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0;
+    text-align: left;
+}
+
+.feature-row .col-md-6 {
+    display: flex;
+    align-items: center;
+}
+
+.feature-row .col-md-6 p {
+    width: 80%;
+}
+
+.s1 {
+    display: flex;
+    width: 100%;
+}
+
+.s2 {
+    width: 40%;
+}
+
+.s3 {
+  
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .spec-box {
+        
+    }
+   .s1 {
+    display: flex;
+    width: 100%;
+}
+
+.s2 {
+    width: 60%;
+    font-size: 15px;
+}
+
+.s3 {
+ 
+    width: 40%;
+    font-size: 12px;
+    text-align: left !important;
+    padding-right: 10px;
+}
+.img-fluid{
+    width:70%;
+}
+.logo{
+   height: 50px;
+   width: 120px;
+}
+.nav a{
+    font-size: 14px;
+}
+.sm{
+    font-size: 22px !important;
+}
+.para {
+font-size: 15px !important;
+}
+}
