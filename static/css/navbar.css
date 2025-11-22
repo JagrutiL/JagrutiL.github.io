@@ -20,7 +20,7 @@
 
          padding: 8px 10px;
          border-radius: 8px;
-         color: #000;
+         color: #2a2a2a;
          font-weight: 500;
          text-decoration: none;
          transition: 0.2s;
@@ -71,18 +71,18 @@
 
 
      .custom-nav {
-         gap: 2px;
+         gap: 1px;
      }
 
      .logo {
-         height: 30px !important;
-         width: 90px !important;
+         height: 25px !important;
+         width: 70px !important;
      }
 
      .nav-link {
 
          font-weight: 600;
-         font-size: 13px;
+         font-size: 12px;
 
      }
 

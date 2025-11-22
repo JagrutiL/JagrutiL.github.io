@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evoluzn</title>
-    <link rel="icon" type="image/png" href="../static/img/evoluzn_title_logo.png">
+     <link rel="icon" type="image/png" href="../static/img/evoluzn_title_logo.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -166,7 +166,10 @@
                 font-size: 18px !important;
                 /* smaller title */
             }
-
+              p {
+                font-size: 15px;
+                text-align: justify !important;
+            }
             .custom-border p {
                 font-size: 14px !important;
                 /* smaller paragraph */
@@ -204,8 +207,60 @@
         @media (max-width: 768px) {
             p {
                 font-size: 15px;
+                text-align: justify !important;
+            }
+            .p-3{
+                 text-align: justify !important;
             }
         }
+
+ .big-img {
+    /* height: 100%; */
+    width: auto;
+    /* object-fit: contain; */
+   
+}
+
+/* Tablet screens (max-width 992px) */
+@media (max-width: 992px) {
+    .big-img {
+        height: 500px;   /* smaller */
+        margin-top: 0;
+    }
+}
+
+/* Mobile screens (max-width 576px) */
+@media (max-width: 576px) {
+    .big-img {
+        height: 420px;   /* more small */
+        margin-top: -30px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1600px) {
+    .big-img {
+        padding: 50px;
+    }
+}
+@media (min-width: 1601px) {
+    .big-img {
+        padding: 30px;
+    }
+}
+
+.wide-btn {
+    width: 180px;     /* increase if you want bigger */
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.landing-btn {
+    /* margin-top: 50px; */
+    background-color: #2B4DBF !important;
+    border-color: #2B4DBF !important;
+    color: #fff !important;
+}
+
     </style>
 
 
@@ -292,10 +347,31 @@
             </div> 
 
             <!-- IMAGE COLUMN -->
-            <div
-                class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center pt-5 order-1 order-md-2 mb-5">
-                <img src="../static/img/landing_page/generated-image (14) (1).png" class="img-fluid" loading="lazy" style="max-width: 80%;" >
-            </div>
+<div class="col-lg-6 col-md-12 p-2 order-1 order-md-2 mb-5">
+
+    <!-- Row 1: Big Image -->
+    <div class="text-center mb-4">
+        <img src="./static/img/landing_page/generated-image (14) (1).png" 
+             class="img-fluid big-img"
+             loading="lazy">
+    </div>
+
+    <!-- Row 2 -->
+    <div class="d-flex justify-content-center mb-3 gap-3">
+        <a href="Power Management Solution.html" class="btn landing-btn wide-btn">Power Management</a>
+        <a href="machine_data_digitization_solutions.html" class="btn landing-btn wide-btn">Machine Data Digitization</a>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="d-flex justify-content-center gap-3">
+        <a href="Intelligent Lighting Management Solution (ILMS).html" class="btn landing-btn wide-btn">Lighting Management</a>
+        <a href="automated_cleanroom_solutions.html" class="btn landing-btn wide-btn">Automated Cleanrooms</a>
+    </div>
+
+</div>
+
+
+
 
         </div>
 </div>
@@ -367,7 +443,7 @@
 
                 </div>
 
-                <h4 class="mt-5 p-3" style="color: #2B4DBF; font-style: italic; text-align: center;">
+                <h4 class="mt-5 p-3" style="color: #2B4DBF; font-style: italic; text-align: center !important;">
                     Start where it matters most—power, machines, or lighting <br> <span>
                         <h4 style="color: #2a2a2a;">and grow your smart facility at your pace,
                             guided by clear data and unified control.</h4>
@@ -510,6 +586,15 @@
             LET’S BUILD A SMARTER, SAFER, AND MORE RESILIENT FUTURE—LAYER BY LAYER.
         </h3>
     </div>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLGT0E62BF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TLGT0E62BF');
+</script>
     <script src="../static/js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
