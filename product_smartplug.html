@@ -5,31 +5,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Intellizens Smart Plug — Behind the
-            Board</title>
-             <link rel="icon" type="image/png" href="../static/img/evoluzn_title_logo.png">
+        Board</title>
+    <link rel="icon" type="image/png" href="../static/img/evoluzn_title_logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!-- <link rel="stylesheet" href="product1.css"> -->
-     <!-- <link rel="stylesheet" href="anemo.css"> -->
-     <link rel="stylesheet" href="../static/css/main.css">
+    <!-- <link rel="stylesheet" href="anemo.css"> -->
+    <link rel="stylesheet" href="../static/css/main.css">
 </head>
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+
+        font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    .machinedata1 {
+        display: none;
+    }
+
+    .machinedata2 {
+        cursor: pointer;
+
+    }
+
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 90%;
+        }
+    }
+</style>
 
 <body>
 
-      <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
-            <a href="index.html"><img class="logo" src="../static/img/evzlooogo.png" height="45" /></a>
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <a href="index.html"><img class="logo" src="../static/img/evzlooogo.png" height="45" /></a>
         <div id="navbar-placeholder"></div>
     </header>
 
     <div class="container py-4">
-        <h3 class="text-center fw-bold" style="color:#2B4DBF; letter-spacing:0px;text-transform: uppercase;">Intellizens Smart Plug — Behind the
+        <h3 class="text-center fw-bold" style="color:#2B4DBF; letter-spacing:0px;text-transform: uppercase;">Intellizens
+            Smart Plug — Behind the
             Board
         </h3>
         <p style="letter-spacing: 1px;" class="text-center mt-2">Embedded industrial single-phase power control with
             remote analytics for panel-level load management.
             operations</p>
 
-       <div class="row mt-5 align-items-start product-row">
-          <div class="col-md-7 text-col">
+        <div class="row mt-5 align-items-start product-row">
+            <div class="col-md-7 text-col">
                 <h5 style="color: #2B4DBF;text-align: justify;" class="fw-bold underline-title">USE CASE</h5>
                 <p>Enables panel-embedded control of single-phase devices with real-time analytics and remote monitoring
                     via a centralized dashboard. Supports automated load scheduling and live energy visibility for air
@@ -61,63 +91,77 @@
                 </ul>
             </div>
 
-              <div class="col-md-5 text-center img-col">
-                <img src="../static/img/prod_smartplug.png"  class="img-fluid" loading="lazy" />
+            <div class="col-md-5 text-center img-col">
+                <img src="../static/img/prod_smartplug.png" class="img-fluid" loading="lazy" />
             </div>
         </div>
-
-        <h4 class="section-title underline-title">KEY FEATURES</h4>
-
-        <div class="container mt-4">
-            <div class="row align-items-start feature-row">
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Automated scheduling to run loads only when needed, extending equipment life and
-                        cutting energy waste.</p>
-                </div>
-
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Over-temperature protection auto-isolates circuits to prevent overheating and fire
-                        risks.</p>
-                </div>
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Remote control and monitoring through centralized dashboard or app with instant
-                        ON/OFF and status checks.</p>
-                </div>
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Power analytics and reporting identify energy-intensive devices and optimize runtime
-                        for cost savings.</p>
-                </div>
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Panel-mount “behind-the-board” design for industrial control cabinets and OEM
-                        integration.
-                    </p>
-                </div>
-
-
-
+        <!-- ******************* -->
+        <div style="display: flex;justify-content: center;align-items: center;gap: 20px; flex-wrap: wrap;">
+            <div class="machinedata2 mt-4 " data-target="yy"
+                style="background-color: #2B4DBF;padding: 20px; color: white; text-align: center; font-weight: 800;font-size: large;cursor: pointer; width: 500px;">
+                KEY FEATURES
             </div>
+            <div class="mt-2 machinedata2 mt-4  " data-target="zz"
+                style="background-color: #2B4DBF;padding: 20px; color: white; text-align: center;font-weight: 800;font-size: large;cursor: pointer; width: 500px;">
+                SPECIFICATIONS </div>
         </div>
+        <!-- ******************* -->
+        <div id="yy" class=" mt-5 machinedata1" data-target="yy">
+            <h4 class="section-title underline-title">KEY FEATURES</h4>
 
+            <div class="container mt-4">
+                <div class="row align-items-start feature-row">
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Automated scheduling to run loads only when needed, extending equipment life and
+                            cutting energy waste.</p>
+                    </div>
+
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Over-temperature protection auto-isolates circuits to prevent overheating and
+                            fire
+                            risks.</p>
+                    </div>
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Remote control and monitoring through centralized dashboard or app with instant
+                            ON/OFF and status checks.</p>
+                    </div>
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Power analytics and reporting identify energy-intensive devices and optimize
+                            runtime
+                            for cost savings.</p>
+                    </div>
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Panel-mount “behind-the-board” design for industrial control cabinets and OEM
+                            integration.
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
 
         <!-- <div class="blue-left-bar mt-5">
 
@@ -127,106 +171,146 @@
                 historical data insights, and integrated alarms to help maintenance teams act proactively and improve
                 operational reliability.</p>
         </div> -->
+        <div id="zz" class=" mt-5 machinedata1" data-target="zz">
 
-        <h4 class="section-title underline-title mt-5">SPECIFICATIONS</h4>
+            <h4 class="section-title underline-title mt-5">SPECIFICATIONS</h4>
 
-        <div class="mt-4">
+            <div class="mt-4">
 
-            <!-- 1st -->
-            <div class="spec-box d-flex align-items-center">
+                <!-- 1st -->
+                <div class="spec-box d-flex align-items-center">
 
-                <span class="s1">
-                 
-                    <strong class="me-3 s2">  <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Form Factor </strong> <span class="s3">Panel‑embedded “behind‑the‑board”
-                        module for control cabinets.</span>
-                </span>
-            </div>
-            <!-- 2nd -->
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1"><strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Input Voltage</strong>
-                    <span class="s3" > AC mains 100–240V, 50/60Hz (region adaptable).</span>
-                </span>
-            </div>
-            <!-- 3rd -->
-            <div class="spec-box d-flex align-items-center">
-                <span class="s1 ">
-                    <strong class="s2" class="me-3"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Load Control
-                    </strong>
-                    <span style="margin-left: 10px !important;" class="s3"> Smart ON/OFF with programmable scheduling;
-                        optional soft‑start profile.r</span>
-                </span>
-            </div>
-            <!-- 4tth -->
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1">
-                    <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Protection</strong>
-                    <span class="s3" >Over‑temperature cutoff; surge protection path; fault
-                        status reporting.</span>
-                </span>
-            </div>
+                    <span class="s1">
 
-            <!-- 5th -->
+                        <strong class="me-3 s2"> <img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Form
+                            Factor </strong> <span class="s3">Panel‑embedded “behind‑the‑board”
+                            module for control cabinets.</span>
+                    </span>
+                </div>
+                <!-- 2nd -->
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1"><strong class="me-3 s2"><img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Input Voltage</strong>
+                        <span class="s3"> AC mains 100–240V, 50/60Hz (region adaptable).</span>
+                    </span>
+                </div>
+                <!-- 3rd -->
+                <div class="spec-box d-flex align-items-center">
+                    <span class="s1 ">
+                        <strong class="s2" class="me-3"><img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Load Control
+                        </strong>
+                        <span style="margin-left: 10px !important;" class="s3"> Smart ON/OFF with programmable
+                            scheduling;
+                            optional soft‑start profile.r</span>
+                    </span>
+                </div>
+                <!-- 4tth -->
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Protection</strong>
+                        <span class="s3">Over‑temperature cutoff; surge protection path; fault
+                            status reporting.</span>
+                    </span>
+                </div>
 
-            <div class="spec-box d-flex align-items-center">
-                 <span class="s1">
-                <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-                    Sensing & Reports</strong><span class="s3" >Real‑time
-                    power, energy, runtime, and peak‑demand snapshots with downloadable reports.</span>
-                </span></span>
-            </div>
-            <!-- 6th -->
+                <!-- 5th -->
 
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1">
-                    <strong class="me-3 s2"> <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Connectivity</strong><span
-                        class="s3"> LoRaWAN for plant‑wide coverage; optional Wi‑Fi/Ethernet
-                        gateway integration.</span></span>
-            </div>
-            <!-- 7th -->
-            <div class="spec-box d-flex align-items-center">
-                 <span class="s1"> 
-                <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-                   Remote Features</strong><span class="s3" >
-                    Dashboard/app control, device grouping, role‑based access, and alert rules.</span></span>
-            </div>
-            <!-- 8th -->
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1">
-                    <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Automation</strong><span class="s3"
-                        >
-                        Time‑based schedules; condition‑based triggers (temp/power thresholds).</span>
-                </span>
-            </div>
-            <!-- 9th -->
+                <div class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Sensing & Reports</strong><span class="s3">Real‑time
+                            power, energy, runtime, and peak‑demand snapshots with downloadable reports.</span>
+                    </span></span>
+                </div>
+                <!-- 6th -->
 
-            <div class="spec-box d-flex align-items-center">
-                <span class="s1"><strong class="me-3 s2"> <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Alerts</strong><span
-                        class="s3" >Over‑temp, over‑current/abnormal draw, missed heartbeat,
-                        schedule deviation.</span>
-                </span>
-            </div>
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"> <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Connectivity</strong><span class="s3"> LoRaWAN for plant‑wide coverage; optional
+                            Wi‑Fi/Ethernet
+                            gateway integration.</span></span>
+                </div>
+                <!-- 7th -->
+                <div class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Remote Features</strong><span class="s3">
+                            Dashboard/app control, device grouping, role‑based access, and alert rules.</span></span>
+                </div>
+                <!-- 8th -->
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Automation</strong><span class="s3">
+                            Time‑based schedules; condition‑based triggers (temp/power thresholds).</span>
+                    </span>
+                </div>
+                <!-- 9th -->
 
-            <!-- 10th -->
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1">
-                    <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Installation</strong><span class="s3"
-                        >
-                        Field‑wiring terminals; compact enclosure footprint.</span>
-                </span>
-            </div>
-            <!-- 11th -->
-            <div class="spec-box d-flex align-items-center">
-                <span class="s1"><strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Environment</strong>
-                    <span class="s3">Industrial grade; suitable for factory floors and equipment panels</span>
-                </span>
-            </div>
+                <div class="spec-box d-flex align-items-center">
+                    <span class="s1"><strong class="me-3 s2"> <img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Alerts</strong><span
+                            class="s3">Over‑temp, over‑current/abnormal draw, missed heartbeat,
+                            schedule deviation.</span>
+                    </span>
+                </div>
 
+                <!-- 10th -->
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Installation</strong><span class="s3">
+                            Field‑wiring terminals; compact enclosure footprint.</span>
+                    </span>
+                </div>
+                <!-- 11th -->
+                <div class="spec-box d-flex align-items-center">
+                    <span class="s1"><strong class="me-3 s2"><img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Environment</strong>
+                        <span class="s3">Industrial grade; suitable for factory floors and equipment panels</span>
+                    </span>
+                </div>
+
+            </div>
         </div>
 
     </div>
-
+  <div class="mt-5" id="footer-placeholder"></div>
+    <script src="../static/js/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../static/js/navbar.js"></script>
+
+    
+    <script>
+        document.body.addEventListener('click', e => {
+            if (e.target.classList.contains('machinedata2')) {
+
+                const target = document.getElementById(e.target.dataset.target);
+
+                // Show/hide logic
+                document.querySelectorAll('.machinedata1').forEach(c => {
+                    if (c !== target) {
+                        c.style.display = 'none';
+                    }
+                });
+
+                // Toggle target block
+                target.style.display = (target.style.display === 'block') ? 'none' : 'block';
+
+                // SCROLL into view when opened
+                if (target.style.display === 'block') {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

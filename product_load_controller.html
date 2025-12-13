@@ -5,29 +5,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>INTELLIZENS Programmable Load Controller</title>
-     <link rel="icon" type="image/png" href="../static/img/evoluzn_title_logo.png">
+    <link rel="icon" type="image/png" href="../static/img/evoluzn_title_logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!-- <link rel="stylesheet" href="product2.css"> -->
-     <!-- <link rel="stylesheet" href="./anemo.css"> -->
-     <link rel="stylesheet" href="../static/css/main.css">
+    <!-- <link rel="stylesheet" href="./anemo.css"> -->
+    <link rel="stylesheet" href="../static/css/main.css">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+            font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .machinedata1 {
+            display: none;
+        }
+
+        .machinedata2 {
+            cursor: pointer;
+
+        }
+
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 90%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-       <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
-            <a href="index.html"><img class="logo" src="../static/img/evzlooogo.png" height="45" /></a>
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <a href="index.html"><img class="logo" src="../static/img/evzlooogo.png" height="45" /></a>
         <div id="navbar-placeholder"></div>
     </header>
 
     <div class="container py-4">
-        <h3 class="text-center fw-bold" style="color:#2B4DBF; letter-spacing:0px;text-transform: uppercase;">INTELLIZENS Programmable Load Controller
+        <h3 class="text-center fw-bold" style="color:#2B4DBF; letter-spacing:0px;text-transform: uppercase;">INTELLIZENS
+            Programmable Load Controller
         </h3>
-        <p style="letter-spacing: 1px;" class="text-center mt-2">Centralized industrial control with intelligent monitoring and automated regulation.</p>
+        <p style="letter-spacing: 1px;" class="text-center mt-2">Centralized industrial control with intelligent
+            monitoring and automated regulation.</p>
 
-      <div class="row mt-5 align-items-start product-row">
-        <div class="col-md-7 text-col">
+        <div class="row mt-5 align-items-start product-row">
+            <div class="col-md-7 text-col">
                 <h5 style="color: #2B4DBF;text-align: justify;" class="fw-bold underline-title">USE CASE</h5>
-                <p>Programs industrial workshops with real-time control over energy-intensive machinery to optimize load distribution, minimize peak tariff penalties, and ensure safe, cost-effective production. Continuously monitors total load and detects peak thresholds using programmable logic, automatically switching machines ON/OFF based on pre-set load limits, tariff windows, and production priorities.</p>
+                <p>Programs industrial workshops with real-time control over energy-intensive machinery to optimize load
+                    distribution, minimize peak tariff penalties, and ensure safe, cost-effective production.
+                    Continuously monitors total load and detects peak thresholds using programmable logic, automatically
+                    switching machines ON/OFF based on pre-set load limits, tariff windows, and production priorities.
+                </p>
 
                 <h5 style="color: #2B4DBF;" class="fw-bold underline-title mt-4">BENEFITS</h5>
                 <ul style="list-style-type: none;  padding-left: 0; margin-left: 0;">
@@ -43,168 +78,235 @@
                     </div>
                     <div class="list">
                         <img src="../static/img/arrow-right.png" width="10px" height="10px" alt="">&nbsp;
-                        <li>Functions as a fail-safe system protecting sensitive equipment and supporting emergency shutdowns.</li>
+                        <li>Functions as a fail-safe system protecting sensitive equipment and supporting emergency
+                            shutdowns.</li>
                     </div>
                     <div class="list">
                         <img src="../static/img/arrow-right.png" width="10px" height="10px" alt="">&nbsp;
-                        <li>Manual override and compliance support ensure safety and full operator control during critical operations.</li>
+                        <li>Manual override and compliance support ensure safety and full operator control during
+                            critical operations.</li>
                     </div>
                 </ul>
             </div>
 
-        <div class="col-md-5 text-center img-col">
+            <div class="col-md-5 text-center img-col">
                 <img src="../static/img/prod_img1_load.png" class="img-fluid" loading="lazy" />
             </div>
         </div>
+        <!-- ******************* -->
+        <div style="display: flex;justify-content: center;align-items: center;gap: 20px; flex-wrap: wrap;">
+            <div class="machinedata2 mt-4 " data-target="yy"
+                style="background-color: #2B4DBF;padding: 20px; color: white; text-align: center; font-weight: 800;font-size: large;cursor: pointer; width: 500px;">
+                KEY FEATURES
+            </div>
+            <div class="mt-2 machinedata2 mt-4  " data-target="zz"
+                style="background-color: #2B4DBF;padding: 20px; color: white; text-align: center;font-weight: 800;font-size: large;cursor: pointer; width: 500px;">
+                SPECIFICATIONS </div>
+        </div>
+        <!-- ******************* -->
+        <div id="yy" class=" mt-5 machinedata1" data-target="yy">
 
-        <h4 class="section-title underline-title">KEY FEATURES</h4>
+            <h4 class="section-title underline-title">KEY FEATURES</h4>
 
-        <div class="container mt-4">
-            <div class="row align-items-start feature-row">
+            <div class="container mt-4">
+                <div class="row align-items-start feature-row">
 
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Manual pushbutton control plus seamless remote operation and monitoring via
+                            centralized IoT dashboard for flexibility.</p>
                     </div>
-                    <p class="para">Manual pushbutton control plus seamless remote operation and monitoring via centralized IoT dashboard for flexibility.</p>
-                </div>
 
 
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Automated temperature regulation adapts control dynamically based on sensor
+                            feedback for enhanced safety and efficiency.</p>
                     </div>
-                    <p class="para">Automated temperature regulation adapts control dynamically based on sensor feedback for enhanced safety and efficiency.</p>
-                </div>
 
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Detailed power consumption reporting reveals energy usage patterns to support
+                            cost management.</p>
                     </div>
-                    <p class="para">Detailed power consumption reporting reveals energy usage patterns to support cost management.</p>
-                </div>
 
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Remote dashboard access enables real-time system adjustment and fault detection,
+                            reducing onsite visits.</p>
                     </div>
-                    <p class="para">Remote dashboard access enables real-time system adjustment and fault detection, reducing onsite visits.</p>
-                </div>
 
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Rugged design built for industrial environments, fully integrable with
+                            Intellizens IIoT ecosystem.
+                        </p>
                     </div>
-                    <p class="para">Rugged design built for industrial environments, fully integrable with Intellizens IIoT ecosystem.
-                    </p>
+
+
+
                 </div>
+            </div>
 
 
+            <div class="blue-left-bar mt-5">
 
+                <h4 class="fw-bold sm ">Smart Advantages</h4>
+                <p class="para">Combines manual simplicity with intelligent automation and remote monitoring. Integrated
+                    temperature control and energy analytics empower operators to optimize plant performance, reduce
+                    downtime, and minimize energy waste—ideal for complex multi-machine setups requiring centralized,
+                    data-driven IIoT management.</p>
             </div>
         </div>
+        <div id="zz" class=" mt-5 machinedata1" data-target="zz">
 
+            <h4 class="section-title underline-title mt-5">SPECIFICATIONS</h4>
 
-        <div class="blue-left-bar mt-5">
+            <div class="mt-4">
 
-            <h4 class="fw-bold sm ">Smart Advantages</h4>
-            <p class="para">Combines manual simplicity with intelligent automation and remote monitoring. Integrated temperature control and energy analytics empower operators to optimize plant performance, reduce downtime, and minimize energy waste—ideal for complex multi-machine setups requiring centralized, data-driven IIoT management.</p>
-        </div>
+                <!-- 1st -->
+                <div class="spec-box d-flex align-items-center">
 
-        <h4 class="section-title underline-title mt-5">SPECIFICATIONS</h4>
+                    <span class="s1">
 
-        <div class="mt-4">
+                        <strong class="me-3 s2"> <img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Control
+                            Interface</strong> <span class="s3">Manual pushbuttons plus full remote control via IoT
+                            dashboard</span>
+                    </span>
+                </div>
+                <!-- 2nd -->
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1"><strong class="me-3 s2"><img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Temperature
+                            Control</strong>
+                        <span class="s3"> Automated thermal management with sensor feedback and adjustment logic</span>
+                    </span>
+                </div>
+                <!-- 3rd -->
+                <div class="spec-box d-flex align-items-center">
+                    <span class="s1 ">
+                        <strong class="s2" class="me-3"><img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Monitoring & Reports
+                        </strong>
+                        <span style="margin-left: 14px !important;" class="s3">Power consumption data logging,
+                            historical graph, and actionable insights</span>
 
-            <!-- 1st -->
-            <div class="spec-box d-flex align-items-center">
+                    </span>
+                </div>
+                <!-- 4tth -->
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Connectivity</strong>
+                        <span class="s3">LoRaWAN / Wi-Fi / Ethernet for cloud-enabled control and analytics</span>
+                    </span>
+                </div>
 
-                <span class="s1">
-                   
-                    <strong class="me-3 s2"> <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Control Interface</strong> <span class="s3">Manual pushbuttons plus full remote control via IoT dashboard</span>
-                </span>
-            </div>
-            <!-- 2nd -->
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1"><strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Temperature Control</strong>
-                    <span class="s3" > Automated thermal management with sensor feedback and adjustment logic</span>
-                </span>
-            </div>
-            <!-- 3rd -->
-            <div class="spec-box d-flex align-items-center">
-                <span class="s1 ">
-                    <strong class="s2" class="me-3"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Monitoring & Reports
-                    </strong>
-                    <span style="margin-left: 14px !important;" class="s3">Power consumption data logging, historical graph, and actionable insights</span>
-                    
-                </span>
-            </div>
-            <!-- 4tth -->
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1">
-                    <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">Connectivity</strong>
-                    <span class="s3" >LoRaWAN / Wi-Fi / Ethernet for cloud-enabled control and analytics</span>
-                </span>
-            </div>
+                <!-- 5th -->
 
-            <!-- 5th -->
+                <div class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Alerts</strong><span class="s3">System fault, temperature thresholds, power anomalies, and
+                            maintenance notifications</span>
+                    </span></span>
+                </div>
+                <!-- 6th -->
 
-            <div class="spec-box d-flex align-items-center">
-                 <span class="s1">
-                <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-                   Alerts</strong><span class="s3" >System fault, temperature thresholds, power anomalies, and maintenance notifications</span>
-                </span></span>
-            </div>
-            <!-- 6th -->
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"> <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Installation</strong><span class="s3"> Panel or enclosure-mounted, compliant with IS/IEC
+                            61439 standards</span></span>
+                </div>
+                <!-- 7th -->
+                <div class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Power Source</strong><span class="s3">
+                            Standard industrial supply 100V–240V AC, 50Hz/60Hz</span></span>
+                </div>
+                <!-- 8th -->
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Inputs/Outputs</strong><span class="s3">
+                            Supports multiple machine connections with configurable I/O for sensors and
+                            actuators.</span>
+                    </span>
+                </div>
+                <!-- 9th -->
 
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1">
-                    <strong class="me-3 s2"> <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Installation</strong><span
-                        class="s3" >  Panel or enclosure-mounted, compliant with IS/IEC 61439 standards</span></span>
-            </div>
-            <!-- 7th -->
-            <div class="spec-box d-flex align-items-center">
-                 <span class="s1"> 
-                <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-                   Power Source</strong><span class="s3" >
-                   Standard industrial supply 100V–240V AC, 50Hz/60Hz</span></span>
-            </div>
-            <!-- 8th -->
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1">
-                    <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Inputs/Outputs</strong><span class="s3"
-                       >
-                        Supports multiple machine connections with configurable I/O for sensors and actuators.</span>
-                </span>
-            </div>
-            <!-- 9th -->
+                <div class="spec-box d-flex align-items-center">
+                    <span class="s1"><strong class="me-3 s2"> <img
+                                src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Environment</strong><span class="s3">Industrial-grade enclosure with protection against dust
+                            and moisture </span>
+                    </span>
+                </div>
 
-            <div class="spec-box d-flex align-items-center">
-                <span class="s1"><strong class="me-3 s2"> <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Environment</strong><span
-                        class="s3" >Industrial-grade enclosure with protection against dust and moisture </span>
-                </span>
-            </div>
-
-            <!-- 10th -->
-            <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-                <span class="s1">
-                    <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png"> Integration</strong><span class="s3"
-                  >
-                        Compatible with the Evoluzn cloud platform and other Intellizens products for unified IIoT management.</span>
-                </span>
-            </div>
-            <!-- 11th -->
-            <!-- <div class="spec-box d-flex align-items-center">
+                <!-- 10th -->
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <span class="s1">
+                        <strong class="me-3 s2"><img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                            Integration</strong><span class="s3">
+                            Compatible with the Evoluzn cloud platform and other Intellizens products for unified IIoT
+                            management.</span>
+                    </span>
+                </div>
+                <!-- 11th -->
+                <!-- <div class="spec-box d-flex align-items-center">
                 <span class="s1"><strong class="me-3 s2"><img src="../static/img/feature_icon.png"> Integration</strong>
                     <span class="s3">Compatible with the Evoluzn cloud platform and other Intellizens products for unified IIoT management</span>
                 </span>
             </div> -->
 
+            </div>
         </div>
 
     </div>
-
+    <div class="mt-5" id="footer-placeholder"></div>
+    <script src="../static/js/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../static/js/navbar.js"></script>
+
+    <script>
+        document.body.addEventListener('click', e => {
+            if (e.target.classList.contains('machinedata2')) {
+
+                const target = document.getElementById(e.target.dataset.target);
+
+                // Show/hide logic
+                document.querySelectorAll('.machinedata1').forEach(c => {
+                    if (c !== target) {
+                        c.style.display = 'none';
+                    }
+                });
+
+                // Toggle target block
+                target.style.display = (target.style.display === 'block') ? 'none' : 'block';
+
+                // SCROLL into view when opened
+                if (target.style.display === 'block') {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

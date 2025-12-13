@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Pure HTML CSS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Lato", Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #2b4dbf;
+            color: #f5f5f5;
+            padding: 60px 15px 30px 15px;
+        }
+
+        /* MAIN FOOTER WRAPPER */
+        .evo-footer-wrapper {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            gap: 25px; /* GAP BETWEEN BOXES */
+        }
+
+        /* EACH BOX */
+        .evo-footer-box {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        footer h5 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        /* Apply spacing to all lines inside footer */
+        footer p,
+        footer div,
+        footer a {
+            margin-bottom: 10px; /* Proper spacing between content */
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        footer a {
+            color: #f5f5f5;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .evo-footer-icon {
+            margin-right: 10px;
+            font-size: 19px;
+            color: #fff;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
+            margin: 40px auto;
+            width: 90%;
+        }
+
+        .evo-footer-copy {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        /* ======================= */
+        /* RESPONSIVE BELOW 768PX */
+        /* ======================= */
+        @media (max-width: 768px) {
+
+            .evo-footer-wrapper {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .evo-footer-box {
+                width: 100%;
+                max-width: 550px;
+            }
+
+            footer h5,
+            footer div,
+            footer a {
+                text-align: center;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <div class="evo-footer-wrapper">
+
+            <div class="evo-footer-box">
+                <h5>Evoluzn</h5>
+                <div>✓ EVOLVE the Existing</div>
+                <div>✓ Add Measurable VALUE</div>
+                <div>✓ Create a Zen Experience</div>
+            </div>
+
+            <div class="evo-footer-box">
+                <h5>Company</h5>
+                <div><a href="./about.html">About Us</a></div>
+            </div>
+
+            <div class="evo-footer-box">
+                <h5>Contact</h5>
+                <div><i class="bi bi-geo-alt-fill evo-footer-icon"></i>Plot No. C-18/1, MIDC Industrial Area Road, Hingna,
+                    Nagpur, Maharashtra - 440028
+                </div>
+                <div><i class="bi bi-envelope-fill evo-footer-icon"></i>amit@evoluzn.in</div>
+                <div><i class="bi bi-telephone-fill evo-footer-icon"></i>+91-89755 98268</div>
+                <div><i class="bi bi-telephone-fill evo-footer-icon"></i>+91-97620 03959</div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="evo-footer-copy">© 2025 Evoluzn. All Rights Reserved.</div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -5,20 +5,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>INTELLIZENS WIRE TEMP SYNC (IWTS)</title>
-     <link rel="icon" type="image/png" href="../static/img/evoluzn_title_logo.png">
+    <link rel="icon" type="image/png" href="../static/img/evoluzn_title_logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="product.css"> -->
-     <!-- <link rel="stylesheet" href="anemo.css"> -->
-      <link rel="stylesheet" href="../static/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-   
-       
+    <!-- <link rel="stylesheet" href="product.css"> -->
+    <!-- <link rel="stylesheet" href="anemo.css"> -->
+    <link rel="stylesheet" href="../static/css/main.css">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+            font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .machinedata1 {
+            display: none;
+        }
+
+        .machinedata2 {
+            cursor: pointer;
+
+        }
+
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 90%;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
 
-     <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
-            <a href="index.html"><img class="logo" src="../static/img/evzlooogo.png" height="45" /></a>
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <a href="index.html"><img class="logo" src="../static/img/evzlooogo.png" height="45" /></a>
         <div id="navbar-placeholder"></div>
     </header>
 
@@ -29,7 +56,7 @@
             operations</p>
 
         <div class="row mt-5 align-items-start product-row">
-          <div class="col-md-7 text-col">
+            <div class="col-md-7 text-col">
                 <h5 style="color: #2B4DBF;text-align: justify;" class="fw-bold underline-title">USE CASE</h5>
                 <p>Real-time monitoring of critical wires and bus bars to eliminate costly thermal cameras, drastically
                     reduce fire risks, and prevent unplanned downtime in electrical panels and production lines.</p>
@@ -54,162 +81,206 @@
                 </ul>
             </div>
 
-           <div class="col-md-5 text-center img-col">
-                <img src="../static/img/prod_img1.png" class="img-fluid p-3" loading="lazy"/>
+            <div class="col-md-5 text-center img-col ">
+                <img src="../static/img/prod_img1.png" class="img-fluid p-3" loading="lazy" />
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center;align-items: center;gap: 20px; flex-wrap: wrap;">
+            <div class="machinedata2 mt-4 " data-target="yy"
+                style="background-color: #2B4DBF;padding: 20px; color: white; text-align: center; font-weight: 800;font-size: large;cursor: pointer; width: 500px;">
+                KEY FEATURES
+            </div>
+            <div class="mt-2 machinedata2 mt-4  " data-target="zz"
+                style="background-color: #2B4DBF;padding: 20px; color: white; text-align: center;font-weight: 800;font-size: large;cursor: pointer; width: 500px;">
+                SPECIFICATIONS </div>
+        </div>
+        <!-- ******************* -->
+        <div id="yy" class=" mt-5 machinedata1" data-target="yy">
+            <h4 class="section-title underline-title">KEY FEATURES</h4>
+
+            <div class="container mt-4">
+                <div class="row align-items-start feature-row">
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Continuous, real-time temperature tracking of wires and conductors.</p>
+                    </div>
+
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Customizable threshold alerts for abnormal temperature variations.</p>
+                    </div>
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Historical data visualization for predictive maintenance insights.</p>
+                    </div>
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Integrated audible hooter alarm for immediate critical event notification.</p>
+                    </div>
+
+                    <div class="col-md-6 d-flex mb-4">
+                        <div class="icon-circle me-3">
+                            <img src="../static/img/feature_icon.png" height="60px" width="60px">
+                        </div>
+                        <p class="para">Suitable for power panels, machinery cabling, and precision production
+                            environments.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="blue-left-bar mt-5">
+
+                <h4 class="fw-bold sm ">Smart Advantages</h4>
+                <p class="para">Combines instant temperature tracking with smart alerting and analytics through an
+                    easy-to-use interface,
+                    historical data insights, and integrated alarms to help maintenance teams act proactively and
+                    improve
+                    operational reliability.</p>
+            </div>
+        </div>
+        <div id="zz" class=" mt-5 machinedata1" data-target="zz">
+
+            <h4 class="section-title underline-title mt-5">SPECIFICATIONS</h4>
+
+            <div class="mt-4">
+                <div class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Measurement range</strong>
+                        <span class="s3">-55°C to +125°C</span>
+                    </span>
+                </div>
+
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Measurement accuracy</strong>
+                        <span class="s3">±2°C</span>
+                    </span>
+                </div>
+
+                <div class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="s2 me-3">Type</strong>
+                        <span style="margin-left: 12px !important;" class="s3">4-Wire meter</span>
+                    </span>
+                </div>
+
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Frequency</strong>
+                        <span class="s3">50/60Hz</span>
+                    </span>
+                </div>
+
+                <div class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Control type</strong>
+                        <span class="s3">Contactor switching</span>
+                    </span>
+                </div>
+
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Dimensions</strong>
+                        <span class="s3">235 × 195 × 37 mm</span>
+                    </span>
+                </div>
+
+                <div class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Connectivity</strong>
+                        <span class="s3">Ethernet, LoRa, Wi-Fi, LTE</span>
+                    </span>
+                </div>
+
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Processor</strong>
+                        <span class="s3">ARM-based</span>
+                    </span>
+                </div>
+
+                <div class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Data outputs</strong>
+                        <span class="s3">Real-time metrics</span>
+                    </span>
+                </div>
+
+                <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Installation</strong>
+                        <span class="s3">Panel-mount</span>
+                    </span>
+                </div>
+
+                <div class="spec-box d-flex align-items-center">
+                    <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
+                    <span class="s1">
+                        <strong class="me-3 s2">Environmental</strong>
+                        <span class="s3">Industrial-grade</span>
+                    </span>
+                </div>
             </div>
         </div>
 
-        <h4 class="section-title underline-title">KEY FEATURES</h4>
-
-        <div class="container mt-4">
-            <div class="row align-items-start feature-row">
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Continuous, real-time temperature tracking of wires and conductors.</p>
-                </div>
-
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Customizable threshold alerts for abnormal temperature variations.</p>
-                </div>
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Historical data visualization for predictive maintenance insights.</p>
-                </div>
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Integrated audible hooter alarm for immediate critical event notification.</p>
-                </div>
-
-                <div class="col-md-6 d-flex mb-4">
-                    <div class="icon-circle me-3">
-                        <img src="../static/img/feature_icon.png" height="60px" width="60px">
-                    </div>
-                    <p class="para">Suitable for power panels, machinery cabling, and precision production environments.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="blue-left-bar mt-5">
-
-            <h4 class="fw-bold sm ">Smart Advantages</h4>
-            <p class="para">Combines instant temperature tracking with smart alerting and analytics through an
-                easy-to-use interface,
-                historical data insights, and integrated alarms to help maintenance teams act proactively and improve
-                operational reliability.</p>
-        </div>
-
-        <h4 class="section-title underline-title mt-5">SPECIFICATIONS</h4>
-
-       <div class="mt-4">
-    <div class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Measurement range</strong>
-            <span class="s3">-55°C to +125°C</span>
-        </span>
     </div>
-
-    <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Measurement accuracy</strong>
-            <span class="s3">±2°C</span>
-        </span>
-    </div>
-
-    <div class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="s2 me-3">Type</strong>
-            <span style="margin-left: 12px !important;" class="s3">4-Wire meter</span>
-        </span>
-    </div>
-
-    <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Frequency</strong>
-            <span class="s3">50/60Hz</span>
-        </span>
-    </div>
-
-    <div class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Control type</strong>
-            <span class="s3">Contactor switching</span>
-        </span>
-    </div>
-
-    <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Dimensions</strong>
-            <span class="s3">235 × 195 × 37 mm</span>
-        </span>
-    </div>
-
-    <div class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Connectivity</strong>
-            <span class="s3">Ethernet, LoRa, Wi-Fi, LTE</span>
-        </span>
-    </div>
-
-    <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Processor</strong>
-            <span class="s3">ARM-based</span>
-        </span>
-    </div>
-
-    <div class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Data outputs</strong>
-            <span class="s3">Real-time metrics</span>
-        </span>
-    </div>
-
-    <div style="background-color: #EAF6FF !important;" class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Installation</strong>
-            <span class="s3">Panel-mount</span>
-        </span>
-    </div>
-
-    <div class="spec-box d-flex align-items-center">
-        <img src="../static/img/fluent-emoji-high-contrast_high-voltage.png">
-        <span class="s1">
-            <strong class="me-3 s2">Environmental</strong>
-            <span class="s3">Industrial-grade</span>
-        </span>
-    </div>
-</div>
-
-    </div>
-
+    <div class="mt-5" id="footer-placeholder"></div>
+    <script src="../static/js/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/static/js/navbar.js"></script>
+
+
+    <script>
+        document.body.addEventListener('click', e => {
+            if (e.target.classList.contains('machinedata2')) {
+
+                const target = document.getElementById(e.target.dataset.target);
+
+                // Show/hide logic
+                document.querySelectorAll('.machinedata1').forEach(c => {
+                    if (c !== target) {
+                        c.style.display = 'none';
+                    }
+                });
+
+                // Toggle target block
+                target.style.display = (target.style.display === 'block') ? 'none' : 'block';
+
+                // SCROLL into view when opened
+                if (target.style.display === 'block') {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

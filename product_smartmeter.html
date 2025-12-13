@@ -7,9 +7,37 @@
     <title>INTELLIZENS Smart Meter</title>
      <link rel="icon" type="image/png" href="../static/img/evoluzn_title_logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <!-- <link rel="stylesheet" href="smrtmeter.css"> -->
      <!-- <link rel="stylesheet" href="./anemo.css"> -->
      <link rel="stylesheet" href="../static/css/main.css">
+     <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+            font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .machinedata1 {
+            display: none;
+        }
+
+        .machinedata2 {
+            cursor: pointer;
+
+        }
+
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 90%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -63,7 +91,18 @@
                 <img src="../static/img/prod_smartmeter.png" width="300px" height="200px" class="img-fluid" loading="lazy" />
             </div>
         </div>
-
+ <!-- ******************* -->
+        <div style="display: flex;justify-content: center;align-items: center;gap: 20px; flex-wrap: wrap;">
+            <div class="machinedata2 mt-4 " data-target="yy"
+                style="background-color: #2B4DBF;padding: 20px; color: white; text-align: center; font-weight: 800;font-size: large;cursor: pointer; width: 500px;">
+                KEY FEATURES
+            </div>
+            <div class="mt-2 machinedata2 mt-4  " data-target="zz"
+                style="background-color: #2B4DBF;padding: 20px; color: white; text-align: center;font-weight: 800;font-size: large;cursor: pointer; width: 500px;">
+                SPECIFICATIONS </div>
+        </div>
+        <!-- ******************* -->
+        <div id="yy" class=" mt-5 machinedata1" data-target="yy">
         <h4 class="section-title underline-title">KEY FEATURES</h4>
 
         <div class="container mt-4">
@@ -140,6 +179,8 @@
             <h4 class="fw-bold sm ">Smart Advantages</h4>
             <p class="para">Combines accurate 3-phase measurement, remote management, and ML-driven analytics to optimize energy costs and improve grid reliability. Flexible connectivity and alerting options make it ideal for plant-wide rollouts and seamless SCADA/BMS integration.</p>
         </div>
+        </div>
+        <div id="zz" class=" mt-5 machinedata1" data-target="zz">
 
         <h4 class="section-title underline-title mt-5">SPECIFICATIONS</h4>
 
@@ -230,11 +271,40 @@
 
 
         </div>
+        </div>
 
     </div>
-
+  <div class="mt-5" id="footer-placeholder"></div>
+    <script src="../static/js/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../static/js/navbar.js"></script>
+
+     <script>
+        document.body.addEventListener('click', e => {
+            if (e.target.classList.contains('machinedata2')) {
+
+                const target = document.getElementById(e.target.dataset.target);
+
+                // Show/hide logic
+                document.querySelectorAll('.machinedata1').forEach(c => {
+                    if (c !== target) {
+                        c.style.display = 'none';
+                    }
+                });
+
+                // Toggle target block
+                target.style.display = (target.style.display === 'block') ? 'none' : 'block';
+
+                // SCROLL into view when opened
+                if (target.style.display === 'block') {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
